@@ -1,7 +1,7 @@
 baseURL: "https://nowlin.io/"
 title: nowlin.io
 paginate: 5
-theme: stack
+theme: theme
 
 enableRobotsTXT: true
 buildDrafts: false
