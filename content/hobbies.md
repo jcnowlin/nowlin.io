@@ -12,7 +12,7 @@ author = "James Nowlin"
     
 - - [cloud.nowlin.io](https://cloud.nowlin.io)
 - - [wiki.nowlin.io](https://wiki.nowlin.io)
-- Tinkering with technology like deploying Raspbery Pis of all generations for random tasks
+- Tinkering with technology like deploying Raspberry Pis of all generations for random tasks
     
 - - [Motion Eye](https://github.com/motioneye-project/motioneye/wiki/Installation) to use webcam/Raspberry Pi pairing as a security camera
 - - [Pi-hole](https://pi-hole.net/) as a [DNS resolver](https://tailscale.com/kb/1114/pi-hole/) for my [Tailnet](https://tailscale.com/kb/1151/what-is-tailscale/), a mesh VPN service provided by Tailscale.

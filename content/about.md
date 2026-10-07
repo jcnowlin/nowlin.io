@@ -12,16 +12,16 @@ I, James Nowlin, am the owner of [nowlin.io](https://nowlin.io). I run this webs
 
 Employer
 ----
-My professional role is Outreach Coordinator at Garland County Library, located in Hot Springs, AR. My primary task managing all aspects of the GCL Bookmobile, from scheduling visits and programs to upkeep of the on-board collection, user-requested holds, and mechanical upkeep. Find out about the GCL Bookmobile service at [GCL's Bookmobile page](https://www.gclibrary.com/bookmobile/). 
+My professional role is Outreach Coordinator at Garland County Library, located in Hot Springs, AR. My primary task is managing all aspects of the GCL Bookmobile, from scheduling visits and programs to upkeep of the on-board collection, user-requested holds, and mechanical upkeep. Find out about the GCL Bookmobile service at [GCL's Bookmobile page](https://www.gclibrary.com/bookmobile/). 
 
-Additionally, I am involved in GCL's free delivery service, which I managed for two years after it's launch during 2020, and GCL's Remote Book Locker service, including stocking, collecting returns, engage in technical troubleshooting, stat-keeping, and training others on various aspects of the Remote Locker service. See more about Free Delivery and Remote Book Lockers on GCL's [Services page](https://gclibrary.com/services.html).
+Additionally, I am involved in GCL's free delivery service, which I managed for two years after its launch during 2020, and GCL's Remote Book Locker service, including stocking, collecting returns, engaging in technical troubleshooting, stat-keeping, and training others on various aspects of the Remote Locker service. See more about Free Delivery and Remote Book Lockers on GCL's [Services page](https://gclibrary.com/services.html).
 
 Education
 ----
 
-I am currently halfway through the Master of Science in Library Science (MLS) program, general track, at University of North Texas. I am also one course away from completing the Advance Management of Libraries and Information Agencies Certification program at UNT. Find out more about the [MLS General Track](https://informationscience.unt.edu/ms-ls-general-program-study) and [Adv Mgmt Info Agencies Certification](https://informationscience.unt.edu/advanced-management-libraries). 
+I am currently halfway through the Master of Science in Library Science (MLS) program, general track, at University of North Texas. I am also one course away from completing the Advanced Management of Libraries and Information Agencies Certification program at UNT. Find out more about the [MLS General Track](https://informationscience.unt.edu/ms-ls-general-program-study) and [Adv Mgmt Info Agencies Certification](https://informationscience.unt.edu/advanced-management-libraries). 
 
-During my undergraduate experience, I obtained a Bachelor of Science in Chemistry from Henderson State University in May, 2020. In addition to library work, I am experienced and competent laboratory technician, and I willingly admit that library work, and the education, are personally fulfilling. Especially when contrasted with chemistry.
+During my undergraduate experience, I obtained a Bachelor of Science in Chemistry from Henderson State University in May, 2020. In addition to library work, I am an experienced and competent laboratory technician, and I willingly admit that library work, and the education, are personally fulfilling. Especially when contrasted with chemistry.
 
 Interests
 ----
@@ -38,7 +38,7 @@ Interests
 
 - Linux, particularly [Bits from Debian](https://bits.debian.org/) and [Fedora Magazine](https://fedoramagazine.org/)    
 - Microsoft business, including AI, Microsoft 365, XBOX and other video gaming news from them    
-- Hardware developments\Consumer electronics
+- Hardware developments / Consumer electronics
     
 
 *Science News*
