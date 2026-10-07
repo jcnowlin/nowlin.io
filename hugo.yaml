@@ -1,6 +1,7 @@
 baseURL: "https://nowlin.io/"
 title: nowlin.io
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: papermod
 
 enableRobotsTXT: true
@@ -17,9 +18,9 @@ params:
   title: nowlin.io
   description: "James Nowlin's website"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  author: James Nowlin
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/og-image.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: dark # auto, light
   mainSections: ["posts", "about", "unt-mls"]
@@ -44,15 +45,14 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    book2: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "book-2.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    safari_pinned_tab: "jnowlin.svg"
 
   label:
     text: "Home"
-    icon: /book2.png
+    icon: /jnowtreach.png
     iconHeight: 35
 
   # profile-mode
@@ -60,7 +60,7 @@ params:
     enabled: false # needs to be explicitly set
     title: ExampleSite
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: "/jnowtreach.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image

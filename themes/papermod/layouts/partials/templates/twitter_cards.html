@@ -28,16 +28,11 @@
 {{- end }}
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-{{- /* Deprecate site.Social.twitter in favor of site.Params.social.twitter */}}
+{{- /* site.Social.twitter removed: deprecated in Hugo 0.124+, hard error in 0.152. Use params.social.twitter instead. */}}
 {{- $twitterSite := "" }}
 {{- with site.Params.social }}
   {{- if reflect.IsMap . }}
     {{- $twitterSite = .twitter }}
-  {{- end }}
-{{- else }}
-  {{- with site.Social.twitter }}
-    {{- $twitterSite = . }}
-    {{- warnf "The social key in site configuration is deprecated. Use params.social.twitter instead." }}
   {{- end }}
 {{- end }}
 
