@@ -1,0 +1,39 @@
+{{ define "main" }}
+<article class="article">
+  <header class="page-head">
+    <div class="prose-wrap">
+      <p class="kicker">{{ .Section | default "Page" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      {{ if and .IsPage (ne .Section "") }}
+      <div class="meta">
+        {{ with .Date }}{{ if not $.Date.IsZero }}<span>{{ .Format "January 2, 2006" }}</span>{{ end }}{{ end }}
+        {{ if gt .ReadingTime 0 }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+        {{ if gt .WordCount 0 }}<span>{{ .WordCount }} words</span>{{ end }}
+        {{ with .Params.author }}<span>By {{ . }}</span>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </header>
+  <div class="prose-wrap">
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    {{ if ne .Section "" }}
+    {{ $siblings := (where .CurrentSection.RegularPages "RelPermalink" "!=" .RelPermalink).ByDate }}
+    {{ $all := .CurrentSection.RegularPages.ByDate }}
+    {{ if gt (len $all) 1 }}
+    <nav class="post-nav" aria-label="More in this section">
+      {{ range $i, $p := $all }}
+        {{ if eq $p.RelPermalink $.RelPermalink }}
+      <div>{{ if gt $i 0 }}{{ with index $all (sub $i 1) }}<a href="{{ .RelPermalink }}"><span class="lbl">← Older</span><span class="t">{{ .Title }}</span></a>{{ end }}{{ end }}</div>
+      <div class="next">{{ if lt $i (sub (len $all) 1) }}{{ with index $all (add $i 1) }}<a href="{{ .RelPermalink }}"><span class="lbl">Newer →</span><span class="t">{{ .Title }}</span></a>{{ end }}{{ end }}</div>
+        {{ end }}
+      {{ end }}
+    </nav>
+    {{ end }}
+    {{ end }}
+  </div>
+</article>
+{{ end }}

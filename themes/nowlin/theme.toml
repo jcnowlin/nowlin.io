@@ -1,0 +1,12 @@
+name = "nowlin"
+license = "MIT"
+licenselink = "https://github.com/jcnowlin/nowlin.io/blob/main/LICENSE"
+description = "A bold personal theme for nowlin.io — Nord-dark, big type, no nonsense."
+homepage = "https://nowlin.io"
+tags = ["dark", "personal", "blog", "portfolio"]
+features = ["blog", "portfolio"]
+min_version = "0.146.0"
+
+[author]
+  name = "James Nowlin"
+  homepage = "https://nowlin.io"

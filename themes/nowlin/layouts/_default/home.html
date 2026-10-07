@@ -1,0 +1,85 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Nowlin.io, a personal website, est. 2020</p>
+    <h1>James<br><span class="stroke">Nowlin</span></h1>
+    <p class="hero-sub">
+      <strong>Outreach Coordinator</strong> at Garland County Library.
+      I drive the <span class="hl-amber">bookmobile</span>.
+      UNT <strong>MLS student</strong>. I <span class="hl-frost">self-host everything</span>
+      and write about it here.
+    </p>
+    <div class="hero-cta">
+      <a class="btn primary" href="/about/">About me <span class="arrow">→</span></a>
+      <a class="btn" href="/posts/">Read the blog</a>
+      <a class="btn" href="/unt-mls/">eFolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="sections">
+  <div class="wrap">
+    <div class="section-grid">
+      <a class="section-card" href="/about/">
+        <h3>About</h3>
+        <p>Librarian, bookmobile operator, human being. The short version of who I am and what I do.</p>
+        <span class="go">Read more →</span>
+      </a>
+      <a class="section-card" href="/posts/">
+        <h3>Blog</h3>
+        <p>Written opinions on topics of varying relevance: libraries, tech, reading, and whatever else.</p>
+        <span class="go">Read more →</span>
+      </a>
+      <a class="section-card" href="/unt-mls/">
+        <h3>eFolio</h3>
+        <p>My UNT Master of Library Science portfolio: education, professional development, reflections.</p>
+        <span class="go">Read more →</span>
+      </a>
+      <a class="section-card" href="/hobbies/">
+        <h3>Hobbies &amp; Projects</h3>
+        <p>Homelab, 3D printing, Raspberry Pis with jobs, and other beautiful mistakes.</p>
+        <span class="go">Read more →</span>
+      </a>
+    </div>
+
+    <div class="stats" role="list" aria-label="Facts about James">
+      <div class="stat" role="listitem">
+        <div class="v">GCL</div>
+        <div class="l">Bookmobile, driven daily</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="v">MLS</div>
+        <div class="l">Univ. of North Texas, in progress</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="v">Homelab</div>
+        <div class="l">Proxmox · NixOS · Tailscale</div>
+      </div>
+      <div class="stat" role="listitem">
+        <div class="v"><em>0</em></div>
+        <div class="l">Flatpaks installed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="latest">
+  <div class="wrap">
+    <div class="latest-head">
+      <h2>Latest writing</h2>
+      <a class="see-all" href="/posts/">All posts →</a>
+    </div>
+    {{ $posts := first 4 (where .Site.RegularPages "Section" "posts") }}
+    {{ range $posts }}
+    <article class="post-row">
+      <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+      <div>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Description }}<p class="desc">{{ . }}</p>{{ end }}
+      </div>
+      <span class="meta">{{ .ReadingTime }} min</span>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

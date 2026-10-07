@@ -1,0 +1,50 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">UNT Master of Library Science</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lede">My ePortfolio for the UNT MLS program: education, professional development, and written reflections on the coursework.</p>
+    {{ with .Content }}<div class="article-body" style="margin-top:1.5rem">{{ . }}</div>{{ end }}
+  </div>
+</header>
+<div class="wrap">
+  <div class="efolio-groups">
+    <section>
+      <h2>Education</h2>
+      {{ range where .RegularPages "File.ContentBaseName" "in" (slice "1.0education" "1.1degrees" "1.2certs" "1.3courses") }}
+      <div class="efolio-item">
+        <span class="n">{{ slicestr .File.ContentBaseName 0 3 }}</span>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+    <section>
+      <h2>Professional Development</h2>
+      {{ range where .RegularPages "File.ContentBaseName" "in" (slice "2.0prodev" "2.1prophil" "2.2proascn") }}
+      <div class="efolio-item">
+        <span class="n">{{ slicestr .File.ContentBaseName 0 3 }}</span>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </section>
+    <section>
+      <h2>Reflections</h2>
+      {{ range .Sections }}
+      <div class="efolio-item">
+        <span class="n">✎</span>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          <p>{{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}entry{{ else }}entries{{ end }}, semester reflections written for UNT coursework.</p>
+        </div>
+      </div>
+      {{ end }}
+    </section>
+  </div>
+</div>
+{{ end }}

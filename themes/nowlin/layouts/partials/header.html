@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="nowlin.io home">
+      <img src="/jnowtreach.png" alt="" width="34" height="34">
+      <span>nowlin<span class="dot">.io</span></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" tabindex="-1">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">MENU</label>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        {{ $cur := . }}
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}" class="{{ if $cur.IsMenuCurrent "main" . }}active{{ end }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

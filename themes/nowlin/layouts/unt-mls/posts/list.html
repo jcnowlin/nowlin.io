@@ -1,0 +1,24 @@
+{{ define "main" }}
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">eFolio</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lede">Semester reflections written for UNT MLS coursework.</p>
+    {{ with .Content }}<div class="article-body" style="margin-top:1.5rem">{{ . }}</div>{{ end }}
+  </div>
+</header>
+<div class="wrap">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="post-row">
+    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+    <div>
+      <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+      {{ with .Description }}<p class="desc">{{ . }}</p>{{ else }}
+        {{ with .Summary }}<p class="desc">{{ . | plainify | truncate 160 }}</p>{{ end }}
+      {{ end }}
+    </div>
+    <span class="meta">{{ .ReadingTime }} min</span>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
