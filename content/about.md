@@ -49,7 +49,7 @@ Interests
 
 *Reading*
 
-When life slows down enough, a science fiction, biography or military thriller book will get picked up, by me equal lover of book and ebooks, do not have the listening skills for audiobooks.    
+When life slows down enough, I'm likely to pick up science fiction, a biography, or a techno-thriller — Clancy especially.    
 - Ebooks are windows to text but are very convenient    
 - Books have volume and provide sensory feedback for all of the senses
 
