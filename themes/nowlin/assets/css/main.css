@@ -165,7 +165,7 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
   color: var(--text);
 }
-.brand img { width: 34px; height: 34px; border-radius: 8px; }
+.brand img { width: 34px; height: 34px; border-radius: 8px; object-fit: cover; }
 .brand .dot { color: var(--amber); }
 
 .nav-toggle { display: none; }
